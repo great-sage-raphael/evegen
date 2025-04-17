@@ -1,0 +1,24 @@
+virtual-evolution-sim/
+├── dna/
+│   ├── gene.py          # Gene class: holds value, connections, influence
+│   ├── genome.py        # Graph-based genome structure
+│
+├── organism/
+│   ├── traits.py        # Derive traits from genome
+│   ├── behavior.py      # Simple rules (hunt, eat, flee, reproduce)
+│   └── organism.py      # Organism class combining traits + behavior
+│
+├── world/
+│   ├── environment.py   # Food, terrain, temperature, etc.
+│   └── world.py         # Handles simulation loop, spawns organisms
+│
+├── evolution/
+│   ├── selection.py     # Fitness, natural selection
+│   ├── crossover.py     # Genome crossover/recombination
+│   └── mutation.py      # Mutation operations
+│
+├── utils/
+│   └── graph_tools.py   # Tools for graph traversal, influence calculation
+│
+├── main.py              # Runs the simulation
+└── config.py            # Constants (mutation rate, lifespan, etc.)
